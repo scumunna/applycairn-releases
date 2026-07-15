@@ -43,6 +43,15 @@ documents, LinkedIn exports, and other sources. These labels do not mean those
 connectors are installed or available. ApplyCairn must verify the current host
 tool, account, scope, date range, and selected records before a connector read.
 
+When ApplyCairn copies an explicitly selected local evidence file into the
+workspace, it also runs a bounded local scan for common privacy signals such as
+credential-shaped strings, internal URLs, employee or customer identifiers,
+confidential financial markers, and proprietary-material wording. Detected
+signals are recorded with the evidence decision and shown to the user. This is
+an attention aid, not a classifier or a safety guarantee; the user must still
+review the file and choose reference-only, a genuinely redacted copy, or
+cancel. ApplyCairn does not upload the file as part of this scan.
+
 ## Public website analytics
 
 The public website at `https://scumunna.github.io/applycairn/` loads the Google

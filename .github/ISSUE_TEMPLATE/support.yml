@@ -67,4 +67,3 @@ body:
           required: true
         - label: I checked the official troubleshooting guide first.
           required: true
-

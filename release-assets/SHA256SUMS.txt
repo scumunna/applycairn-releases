@@ -1,3 +1,3 @@
-336742dca915383ea4d06db13b8dcb1f54b2097110bf6cf95ed4e897e988d3df  ApplyCairn-Codex-0.4.0.zip
-02ea994854d49642bbcfdd884fbb6570f61f42cb27175a58989032928d9d8303  ApplyCairn-Claude-Code-0.4.0.zip
-844c1be46d2321d7b0ca3a1dcce2b6ffb3a54d19c19ca50314ed3a03c54f8555  ApplyCairn-0.4.0.mcpb
+2deacb6a7ee63071d19f58fa931ee9a3c3a973e174abba006459fb22aaae236d  ApplyCairn-Codex-0.4.0.zip
+19b78cfe8c5213db36e3af6833e57af347b413cccfaf0c7ec0aa284a177a692d  ApplyCairn-Claude-Code-0.4.0.zip
+fea3a52565faa4281a4d9fabb05abdb38bd28058cce936e6000059b40c402a3d  ApplyCairn-0.4.0.mcpb
