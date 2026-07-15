@@ -1,0 +1,29 @@
+{
+  "name": "applycairn",
+  "version": "0.1.0+codex.20260715002953",
+  "description": "A private, local-first job-search ecosystem from resume intake through discovery, applications, tracking, outreach, and interviews",
+  "author": {
+    "name": "ApplyCairn"
+  },
+  "homepage": "https://scumunna.github.io/applycairn/",
+  "license": "UNLICENSED",
+  "keywords": ["jobs", "career", "resume", "applications", "recruiting"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "ApplyCairn",
+    "shortDescription": "Run your complete job search from one private workspace.",
+    "longDescription": "Start with a resume, search one role or many, score and track opportunities, tailor truthful application packets, research companies and public contacts, reconcile replies, and prepare for interviews.",
+    "developerName": "ApplyCairn",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Write"],
+    "websiteURL": "https://scumunna.github.io/applycairn/",
+    "privacyPolicyURL": "https://scumunna.github.io/applycairn/privacy",
+    "termsOfServiceURL": "https://scumunna.github.io/applycairn/terms",
+    "defaultPrompt": [
+      "Start my ApplyCairn job search.",
+      "Find and score new jobs for every search lane.",
+      "Run my daily job-search update."
+    ],
+    "brandColor": "#23352D"
+  }
+}
