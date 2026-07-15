@@ -1,6 +1,12 @@
+<p align="center"><img src="assets/brand/applycairn-mark.svg" width="96" alt="ApplyCairn"></p>
+
 # ApplyCairn
 
 ApplyCairn is a free-to-use, proprietary job-search ecosystem for Codex and Claude Desktop. It was created and published by **ApplyCairn**. The development source is private; this repository contains only the installable runtime and required plugin files.
+
+![ApplyCairn command center](assets/screenshots/dashboard.png)
+
+See the complete privacy-safe product tour at [scumunna.github.io/applycairn](https://scumunna.github.io/applycairn/).
 
 ## Install in Codex desktop
 
@@ -18,7 +24,7 @@ Then install ApplyCairn from the Codex Plugins screen.
 
 ## Install in Claude Desktop
 
-Download `ApplyCairn-0.2.0.mcpb` from the [v0.2.0 release](https://github.com/scumunna/applycairn-releases/releases/tag/v0.2.0), open it with Claude Desktop, choose a local data folder, and type `start` in a new conversation.
+Download `ApplyCairn-0.2.1.mcpb` from the [v0.2.1 release](https://github.com/scumunna/applycairn-releases/releases/tag/v0.2.1), open it with Claude Desktop, choose a local data folder, and type `start` in a new conversation.
 
 ## What stays local
 

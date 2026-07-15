@@ -1,6 +1,14 @@
-# ApplyCairn 0.2.0 release notes
+# ApplyCairn 0.2.1 release notes
 
-Initial private-review release for the official OpenAI plugin directory.
+Brand and product-tour release for the public GitHub runtime and future directory
+submissions.
+
+- New ApplyCairn cairn-and-trail identity in the desktop interfaces, repository,
+  and public website.
+- New aubergine, coral, ivory, and lilac product palette based on the flat,
+  screenshot-led design system.
+- Privacy-safe product tour covering onboarding, scored jobs, accomplishments,
+  applications, daily updates, approvals, and data ownership.
 
 - Guided onboarding from the word `start`; no YAML or model API key.
 - Resume-backed accomplishments, profile, and multi-lane search setup.

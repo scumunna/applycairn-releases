@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title description">
+  <title id="title">ApplyCairn</title>
+  <desc id="description">Three cairn stones crossed by an upward trail.</desc>
+  <g fill="#24183d">
+    <rect x="7" y="43" width="50" height="14" rx="7"/>
+    <rect x="14" y="29" width="36" height="11" rx="5.5"/>
+    <rect x="22" y="17" width="21" height="9" rx="4.5"/>
+  </g>
+  <path d="M28 56C18 48 43 40 31 33C21 26 40 23 36 12" fill="none" stroke="#f05d3d" stroke-width="6" stroke-linecap="round"/>
+  <path d="M29 17L36 9L44 17Z" fill="#f05d3d"/>
+</svg>
