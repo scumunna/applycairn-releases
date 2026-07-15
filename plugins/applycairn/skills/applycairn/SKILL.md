@@ -5,22 +5,27 @@ description: Run the complete ApplyCairn job-search ecosystem. Use when the user
 
 # ApplyCairn
 
-ApplyCairn is a local-first job-search operating system. The workspace in the
-current folder is the canonical user record. Do not create an ApplyCairn cloud
-profile, request a model API key, or copy personal data to an ApplyCairn service.
+ApplyCairn is a local-first job-search operating system. The local MCP runtime
+reports the exact visible workspace location; that folder is the canonical user
+record. Do not create an ApplyCairn cloud profile, request a model API key, or copy
+personal data to an ApplyCairn service.
 
 ## Start or resume
 
-1. Check for `.applycairn/workspace.json`. If absent, resolve the plugin root from
-   the absolute path of this loaded `skills/applycairn/SKILL.md` file (two parent
-   directories above it), then run `<plugin-root>/scripts/init-current.mjs` with
-   Node. Do not assume a `CODEX_PLUGIN_ROOT` shell variable exists. The initializer
-   must refuse a non-empty folder and must never overwrite unrelated files.
-2. Inspect `resume-inbox/`, `accomplishments/accomplishments.md`,
-   `profile/profile.md`, and the tracker. Route to the first incomplete state.
-3. Ask two or three questions at a time. Save each confirmed answer before moving
+1. Call `get_workspace_status`. This safely initializes a visible local workspace
+   when needed and returns `workspaceLocation`. Use that exact folder for all file
+   work. On Codex it defaults to `~/Documents/ApplyCairn/workspace`; Claude Desktop
+   uses the folder selected during extension installation.
+2. If the local MCP runtime is unavailable, explain that the plugin installation is
+   incomplete. Do not create a second workspace or silently fall back to plugin-cache
+   storage.
+3. Inspect `resume-inbox/`, `accomplishments/accomplishments.md`,
+   `profile/profile.md`, and the tracker under `workspaceLocation`. Route to the
+   first incomplete state.
+4. Ask two or three questions at a time. Save each confirmed answer before moving
    on. Never ask the person to edit YAML or provide an OpenAI/Anthropic API key.
-4. If onboarding is complete, show connector availability, whether a daily run is
+5. If onboarding is complete, call `get_applycairn_dashboard`, show connector
+   availability, whether a daily run is
    due, the best current opportunities, and the top three next actions.
 
 ## Resume ingestion and living evidence
@@ -112,6 +117,18 @@ Run mock interviews grounded in the saved description, verified accomplishments,
 and known gaps. Ask one question at a time and coach toward truthful specificity.
 Save only user-approved notes. Dashboards distinguish verified counts from missing
 or stale connector data and show lane-level and overall pipeline health.
+
+Use the interactive MCP surfaces whenever they match the request:
+
+- `get_workspace_status` for guided onboarding questions.
+- `get_applycairn_dashboard` for the command center.
+- `read_candidate_document` for accomplishments and profile review.
+- `list_scored_jobs` for evidence-backed opportunity cards.
+- `list_application_tracker` for the application pipeline.
+- `get_daily_briefing` after daily maintenance.
+- `list_public_contacts` for public-contact research.
+- `preview_high_impact_action` for approval previews.
+- `export_workspace` for user-owned data controls.
 
 ## Portability and safety
 

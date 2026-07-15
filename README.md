@@ -1,31 +1,29 @@
-# ApplyCairn releases
+# ApplyCairn
 
-This repository contains proprietary runtime packages only. The ApplyCairn source
-repository, build system, tests, and private history are not published here.
+ApplyCairn is a free-to-use, proprietary job-search ecosystem for Codex and Claude Desktop. It was created and published by **ApplyCairn**. The development source is private; this repository contains only the installable runtime and required plugin files.
 
-ApplyCairn is free to use. It keeps each person's canonical job-search workspace in
-a folder they control and does not ask for an OpenAI or Anthropic API key.
+## Install in Codex desktop
 
-## Codex desktop
+1. Add this GitHub repository as a plugin marketplace: `scumunna/applycairn-releases`.
+2. Open Plugins, find **ApplyCairn**, and choose Install.
+3. Start a new task and type `start`.
+
+Command-line equivalent:
 
 ```sh
 codex plugin marketplace add scumunna/applycairn-releases
-codex plugin add applycairn@applycairn-releases
 ```
 
-Open a new empty job-search folder in Codex and type `start`.
+Then install ApplyCairn from the Codex Plugins screen.
 
-## Claude Desktop
+## Install in Claude Desktop
 
-Download the latest `ApplyCairn-*.mcpb` file from Releases, double-click it,
-choose the visible local data folder, open a new Claude conversation, and type
-`start`.
+Download `ApplyCairn-0.2.0.mcpb` from the [v0.2.0 release](https://github.com/scumunna/applycairn-releases/releases/tag/v0.2.0), open it with Claude Desktop, choose a local data folder, and type `start` in a new conversation.
 
-## Safety and privacy
+## What stays local
 
-ApplyCairn may research, score, organize, and draft automatically. Sending email,
-submitting applications, scheduling, editing public profiles, and contacting people
-require explicit approval. LinkedIn scraping and automated LinkedIn messaging are
-prohibited.
+Resumes, accomplishments, profiles, jobs, contacts, application trackers, approvals, and exports stay in a folder the user controls. ApplyCairn does not require a separate model API key. The user's eligible Codex or Claude account supplies the model.
 
-Privacy and terms: https://scumunna.github.io/applycairn/
+## License and authenticity
+
+Copyright 2026 ApplyCairn. All rights reserved. Free use does not grant permission to copy, modify, redistribute, rebrand, sublicense, or sell ApplyCairn. Runtime files installed on a computer can be inspected; they are not open source. Verify release checksums against `release-assets/SHA256SUMS.txt`.
