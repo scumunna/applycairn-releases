@@ -73,6 +73,11 @@ Downloadable export links are single-use bearer links and expire after ten minut
 Anyone who obtains a valid link during that window could use it once, so do not
 share it. Local exports do not create a public URL.
 
+The default portable ZIP is checksummed but not encrypted. The local CLI also
+supports an `.acx` passphrase-protected export using AES-256-GCM; the passphrase
+is never stored in the workspace and cannot be recovered by ApplyCairn. Keep it
+separate from the encrypted file.
+
 Deleting the local workspace permanently removes ApplyCairn's canonical copy from
 that location after a separate destructive approval bound to the displayed path,
 file count, byte count, and current content snapshot. Any intervening workspace
