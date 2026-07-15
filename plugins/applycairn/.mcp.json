@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "applycairn-local": {
+      "command": "node",
+      "args": ["./mcp/server.cjs"],
+      "cwd": ".",
+      "env": {
+        "APPLYCAIRN_LOCAL_MODE": "1",
+        "APPLYCAIRN_TEMPLATE_DIR": "./assets/workspace-template",
+        "APPLYCAIRN_TENANT_ID": "workspace"
+      }
+    }
+  }
+}
