@@ -2,7 +2,7 @@
 
 # ApplyCairn
 
-ApplyCairn is a free-to-use, proprietary job-search ecosystem for Codex and Claude Desktop. It was created and published by **ApplyCairn**. The development source is private; this repository contains only the installable runtime and required plugin files.
+ApplyCairn is a proprietary, local-first AI job-search assistant and application tracker for Codex and Claude Desktop. It turns a resume and short intake into a verified accomplishment inventory, tailored resumes and cover letters, scored jobs, recruiter outreach, interview preparation, and daily application tracking. The development source is private; this repository contains only the installable runtime and required plugin files.
 
 ![ApplyCairn command center](assets/screenshots/dashboard.png)
 
