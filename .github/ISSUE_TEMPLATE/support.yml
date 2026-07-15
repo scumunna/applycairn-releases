@@ -1,0 +1,70 @@
+name: Installation or product support
+description: Report a setup problem or a reproducible product issue without sharing career data.
+title: "[Support] "
+labels: [support]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include resumes, email contents, screenshots with personal or employer data, access tokens, OAuth codes, complete workspace exports, or proprietary material. For a suspected vulnerability, use the private security channel instead.
+  - type: input
+    id: version
+    attributes:
+      label: ApplyCairn version
+      description: Copy the version shown by the installer or release page.
+      placeholder: 0.4.0
+    validations:
+      required: true
+  - type: dropdown
+    id: host
+    attributes:
+      label: Host
+      options:
+        - Codex desktop
+        - Claude Desktop
+        - Claude Code
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Installation
+        - Start or onboarding
+        - Gmail or connector recovery
+        - Daily update or schedule
+        - Export or import
+        - Generated document
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: What happened?
+      description: Include the steps and the exact non-sensitive error text.
+      placeholder: |
+        1. Installed...
+        2. Opened a new task...
+        3. Typed start...
+        Error shown: ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I removed personal, employer, account, credential, and proprietary information.
+          required: true
+        - label: I checked the official troubleshooting guide first.
+          required: true
+
