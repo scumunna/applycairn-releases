@@ -1,0 +1,18 @@
+{
+  "name": "applycairn",
+  "description": "Private Career Memory for evidence-backed reviews, promotions, compensation cases, role justification, and job search",
+  "version": "0.4.0",
+  "author": {
+    "name": "ApplyCairn"
+  },
+  "homepage": "https://scumunna.github.io/applycairn/",
+  "repository": "https://github.com/scumunna/applycairn-releases",
+  "license": "UNLICENSED",
+  "keywords": [
+    "career-memory",
+    "accomplishments",
+    "performance-reviews",
+    "promotions",
+    "jobs"
+  ]
+}
