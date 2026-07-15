@@ -1,19 +1,25 @@
 {
   "name": "applycairn",
-  "version": "0.2.1",
-  "description": "An immersive, local-first job-search ecosystem with guided onboarding, dashboards, discovery, applications, tracking, and interviews",
+  "version": "0.4.0",
+  "description": "A private Career Memory for evidence-backed reviews, promotions, compensation cases, role justification, and job search",
   "author": {
     "name": "ApplyCairn"
   },
   "homepage": "https://scumunna.github.io/applycairn/",
   "license": "UNLICENSED",
-  "keywords": ["jobs", "career", "resume", "applications", "recruiting"],
+  "keywords": [
+    "career-memory",
+    "accomplishments",
+    "performance-reviews",
+    "promotions",
+    "jobs"
+  ],
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "ApplyCairn",
-    "shortDescription": "Run your complete job search from one private workspace.",
-    "longDescription": "Start with an interactive resume intake, search one role or many, inspect evidence-backed scores in a dashboard, track applications, research companies and public contacts, reconcile replies, and prepare for interviews.",
+    "shortDescription": "Keep a private, evidence-backed memory of your career.",
+    "longDescription": "Capture work as it happens, preserve approved local evidence, maintain a canonical accomplishment record, prepare reviews and promotion cases, and build truthful job applications from the same user-owned Career Memory.",
     "developerName": "ApplyCairn",
     "category": "Productivity",
     "capabilities": ["Interactive", "Write"],
@@ -21,9 +27,9 @@
     "privacyPolicyURL": "https://scumunna.github.io/applycairn/privacy",
     "termsOfServiceURL": "https://scumunna.github.io/applycairn/terms",
     "defaultPrompt": [
-      "Start my ApplyCairn job search.",
-      "Open my ApplyCairn dashboard.",
-      "Run my daily job-search update."
+      "Start my ApplyCairn Career Memory.",
+      "Log a win from this week.",
+      "Prepare evidence for my performance review."
     ],
     "brandColor": "#23352D"
   }
