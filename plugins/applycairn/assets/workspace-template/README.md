@@ -2,7 +2,7 @@
 
 This folder is your portable, local job-search record. It contains Markdown, CSV, JSON, and the documents you add or generate. You can open and edit the human-readable files with ordinary desktop apps.
 
-Start by placing a PDF or DOCX resume in `resume-inbox/`. ApplyCairn will guide you from there a few questions at a time.
+Start by placing a PDF, DOCX, DOC, TXT, or Markdown resume in `resume-inbox/`. ApplyCairn will guide you from there a few questions at a time.
 
 Your confirmed accomplishments are the only claim source. ApplyCairn derives `master-resume/master-resume.md` as a broad resume, but every tailored packet must still trace directly to confirmed accomplishments. User-approved recurring-work preferences live in `automations/automations.json`; only a matching host receipt proves an actual schedule exists.
 
