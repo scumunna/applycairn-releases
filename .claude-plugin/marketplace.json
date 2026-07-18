@@ -11,7 +11,7 @@
       "name": "applycairn",
       "source": "./plugins/claude-code",
       "description": "Keep private Career Memory for reviews, promotions, compensation, role justification, and evidence-backed job search.",
-      "version": "0.4.0"
+      "version": "0.4.1"
     }
   ]
 }

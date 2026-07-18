@@ -8,19 +8,23 @@ Use this page to hand ApplyCairn to a new Codex user.
 
 Install ApplyCairn v0.4.0 from the official ApplyCairn marketplace in Codex
 Plugins. Open a new task and type `start`. ApplyCairn creates one local workspace
-and shows you where it is. There is no config file and no model API key.
+and shows you where it is. Downloads/ApplyCairn is the default, and you can choose
+another folder during setup. There is no config file and no model API key.
 
-### Step 2: Upload your resume
+### Step 2: Complete the current step
 
-Attach a non-empty PDF, DOCX, DOC, TXT, or Markdown resume under 20 MB. If you have
-more than one, attach them all. ApplyCairn keeps the originals and proposes an
-accomplishment inventory for review.
+ApplyCairn shows one current action or question. Follow that step before moving on.
+When it asks for a resume, drag one non-empty PDF, DOCX, DOC, TXT, or Markdown
+file into the upload area, or click the area to choose it. Files must be under
+20 MB. ApplyCairn keeps the original and proposes an accomplishment inventory
+for review.
 
-### Step 3: Build Career Memory
+### Step 3: Answer one question
 
-Answer one question at a time about work, projects, school, volunteering,
-leadership, training, caregiving, and personal achievements. Type or use the
-desktop app's microphone. ApplyCairn confirms each fact before saving it.
+Answer the current question about work, projects, school, volunteering, leadership,
+training, caregiving, or personal achievements. Type or use the desktop app's
+microphone. ApplyCairn confirms each fact before saving it, then shows the next
+question.
 
 ### Step 4: Review and use it
 

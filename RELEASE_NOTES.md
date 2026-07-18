@@ -1,4 +1,11 @@
-# ApplyCairn 0.4.0 release candidate
+# ApplyCairn 0.4.1 release
+
+ApplyCairn 0.4.1 makes onboarding easier for first-time users. It shows one
+current action at a time, stores new workspaces in `Downloads/ApplyCairn` by
+default while allowing a different folder, and supports selecting or dragging a
+resume into the upload area.
+
+The release keeps the 0.4.0 Career Memory and evidence-safety contract below.
 
 ApplyCairn 0.4.0 expands the product from an evidence-backed job-search workspace
 into Private Career Memory: a local record for capturing work, preparing reviews
