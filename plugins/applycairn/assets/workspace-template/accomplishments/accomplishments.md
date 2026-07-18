@@ -1,12 +1,63 @@
-# Verified Accomplishments
+# Career Story Records
 
-This file is your canonical Career Memory: the evidence source for every resume, cover letter, interview answer, annual review, promotion case, compensation discussion, and role justification. ApplyCairn never invents or inflates claims.
+This file is the human-readable companion to your canonical Career Memory. Confirmed Career Stories can support reviews, promotion cases, interviews, presentations, growth plans, and job strategy; resume and application claims are promoted here explicitly. ApplyCairn never invents or inflates claims.
 
-Capture the full story behind each win: situation, your exact contribution, decisions, result, business impact, scope, dates, competencies, and evidence. Add exact numbers when you can. Screenshots, dashboards, praise, certificates, and documents belong in `career-memory/evidence/` only after a privacy review and must be linked from the accomplishment they support.
+Capture the full story behind each moment: why it mattered, the situation and stakes, what got hard, the hurdles and constraints, alternatives you considered, decisions, your exact contribution, what changed, feedback, lessons, and evidence. Add exact numbers when you can, and mark unknowns instead of guessing. Screenshots, dashboards, praise, certificates, and documents belong in `career-memory/evidence/` only after the user chooses local copy, redacted copy, reference only, or cancel.
+
+Each confirmed record should follow this shape:
+
+```md
+## [Story ID] Short title
+
+- Status: draft | needs_detail | verified | review_ready
+- Visibility: career | private_coaching | personal_only
+- Chapter: role, project, company, skill, or life period
+- Cycle: quarter, fiscal year, annual review, promotion, or compensation window
+
+### The short version
+
+What changed, in one or two sentences.
+
+### Why this mattered
+
+Context, stakes, goal, and why now.
+
+### What was hard
+
+Hurdles, constraints, risks, and tradeoffs.
+
+### What I decided
+
+Alternatives considered and decision rationale.
+
+### What I did
+
+Actions, milestones, individual contribution, and team contribution.
+
+### What changed
+
+Results, business impact, scope, metrics, and counterfactual.
+
+### What I learned
+
+Feedback, lessons, and what I would do differently.
+
+### Proof and source trail
+
+Evidence IDs, source locations, and verification state.
+
+### Where this story can help
+
+Approved uses such as review, promotion, interview, outreach, presentation, growth, or application.
+
+### Open questions
+
+Missing details ApplyCairn should ask about one at a time.
+```
 
 ## Experience and Projects
 
-Add a resume to `resume-inbox/`, then start ApplyCairn to build this inventory.
+You can start with a resume, a voice note, a screenshot, feedback, a project milestone, or a blank page. Type `start` and choose whether you are documenting your work, preparing for a review or promotion, growing intentionally, transitioning, or actively looking for a role.
 
 ## Personal Projects and Businesses
 

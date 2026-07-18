@@ -9,6 +9,8 @@ Use the local MCP runtime to locate the canonical workspace. If it is unavailabl
 
 ## Evidence spine
 
+For a plain-language request, start with `$today-next-action` and let `workflow-orchestrator` choose the safest route when available. Use `$capture-anything` for an unstructured note, dictated thought, screenshot, document, URL, or selected record. Use `$career-briefing`, `$memory-maintenance`, and `$evidence-gaps` to keep the workspace useful between larger workflows.
+
 Route onboarding through `$start`, `$extract-accomplishments`, `$intake-interview`, `$update-accomplishments`, and `$build-master-resume`.
 
 - `accomplishments/accomplishments.md` is the only claim source.
@@ -26,6 +28,8 @@ Use `$capture-career-event` for quick text, voice, feedback, screenshot, documen
 Before retaining employer material, apply the privacy gate and offer local copy, redacted copy, reference only, or cancel. Never broadly scan a connector or treat private reflection as employer-facing evidence. Generated career packets must cite the current evidence revision, exclude raw attachments by default, and become stale after relevant canonical changes.
 
 ## Search and applications
+
+Use `$application-pipeline` as the lifecycle front door, `$job-search-strategy` for lane and constraint decisions, and `$interview-loop` for preparation through debrief. Use `$career-review` to route review and promotion intent, and `$offer-negotiation` for private offer analysis. The specialist agents `workflow-orchestrator`, `application-strategist`, `interview-coach`, `career-coach`, `career-narrative-editor`, `credential-verifier`, `deadline-manager`, `evidence-gap-analyst`, `factual-consistency-checker`, `output-policy-enforcer`, `privacy-steward`, `review-presentation-assembler`, and `timeline-organizer` coordinate these workflows without replacing the existing evidence, ATS, proofreading, fit, or privacy gates.
 
 Use `$discover-jobs`, `$assess-job`, `$target-companies`, `$build-application`, `$proofread-review`, `$prepare-outreach`, `$update-tracker`, `$practice-interview`, and `$show-dashboard`. Tailored packets must map every substantive line to confirmed, metric-complete canonical evidence. Create them with `save_application_packet`; its generated Markdown, DOCX, PDF, hashes, extracted-text hashes, and measured page counts are authoritative. Fit debate uses `fit-advocate`, `fit-skeptic`, and `hiring-manager`. Packet readiness requires separate `ats-reviewer`, `proofreader`, `evidence-reviewer`, and `privacy-reviewer` runs against the same current packet. Any profile, evidence, posting, fit, or packet edit invalidates old reviews.
 

@@ -7,7 +7,7 @@ one-on-ones, role justification, offboarding, portfolios, interview stories, and
 job search - without turning unreviewed notes into claims.
 
 This document defines the public contract for ApplyCairn 0.4.0. The runtime schema
-is version 2. Product copy may summarize this contract but must not weaken its
+is version 3. Product copy may summarize this contract but must not weaken its
 evidence, privacy, connector, approval, or verifier requirements.
 
 ## Record model
@@ -25,20 +25,27 @@ Career Memory keeps distinct records for distinct trust levels:
 3. **Feedback receipts** preserve the statement, provider description, source
    locator, provenance, visibility, and verification state. They do not prove the
    feedback is accurate or authorize reuse outside its selected visibility.
-4. **Canonical accomplishments** live in
+4. **Career Story Records** can be confirmed without a resume. They preserve the
+   full causal story: situation, problem, goal, stakes, hurdles, decisions,
+   alternatives, tradeoffs, contribution, outcomes, metrics, feedback, lessons,
+   reusable angles, open questions, usage policy, and StoryFact provenance. A
+   confirmed Career Story is ready for Career Memory review and coaching outputs;
+   it becomes resume-eligible only after the user separately promotes it into
+   `accomplishments/accomplishments.md`.
+5. **Canonical accomplishments** live in
    `accomplishments/accomplishments.md` and its structured state. They separate the
    situation, individual contribution, team contribution, actions, decisions,
    result, impact, metrics, scope, skills, competencies, and supporting claim IDs.
    This is the only source for downstream career or job-search claims.
-5. **Frameworks and review cycles** store goals, OKRs, principles, competencies,
+6. **Frameworks and review cycles** store goals, OKRs, principles, competencies,
    role descriptions, leveling guides, review questions, review periods, and
    targets. A mapping shows supported, partial, or missing evidence; it does not
    promise a level, promotion, raise, or outcome.
-6. **Check-ins** record weekly, monthly, quarterly, project-closeout,
+7. **Check-ins** record weekly, monthly, quarterly, project-closeout,
    review-preparation, role-transition, and offboarding work. A check-in can be
    due, in progress, confirmed, a no-op, snoozed, or failed. Quiet mode and a
    vacation pause suppress prompts; they do not delete records.
-7. **Career packets** are derived Markdown, DOCX, and PDF artifacts linked to the
+8. **Career packets** are derived Markdown, DOCX, and PDF artifacts linked to the
    current evidence revision and exact claim IDs. Supported purposes include
    reviews, promotion and compensation cases, manager briefs, role justification,
    one-on-ones, brag documents, portfolios, development plans, interview story
@@ -52,10 +59,11 @@ structured data so the user can inspect and edit her workspace.
 
 Raw capture follows a one-way trust boundary:
 
-`inbox -> proposal -> user confirmation or document verification -> canonical accomplishment -> derived packet`
+`inbox -> complete story -> user confirmation -> Career Story Record -> derived review source -> optional canonical accomplishment -> final packet`
 
 - An inbox event is never automatically canonical, resume-eligible, or
-  review-eligible.
+  review-eligible. `confirm_career_event` can create a resume-optional Career
+  Story Record only after exact user confirmation and completion checks.
 - ApplyCairn must show the proposed fact and its evidence links before asking for
   confirmation. It does not infer missing numbers, dates, ownership, or scope.
 - Conflicted, unverified, or metric-incomplete material remains visible as a gap
@@ -70,10 +78,13 @@ Raw capture follows a one-way trust boundary:
 
 ## Visibility and privacy
 
-Career Memory supports `career`, `manager_safe`, and `private_growth` visibility;
-feedback can also be `private`. Private-growth notes are for the user and must not
-appear in employer-facing documents. Visibility is a workflow control, not file
-encryption or operating-system access control.
+Career Memory supports `career`, `manager_safe`, `private_coaching`, and
+`personal_only` usage policies alongside `private_growth` visibility; feedback can
+also be `private`. Private-growth and personal-only notes are for the user and
+must not appear in employer-facing documents. Personal-only context is stored in
+the app-only encrypted vault and has no model-facing read path by default.
+Visibility is a workflow control, not file encryption or operating-system access
+control.
 
 The canonical workspace stays in a folder the user chooses. ApplyCairn does not
 operate a canonical cloud profile database or retain a server-side workspace copy.
@@ -132,8 +143,9 @@ are not proof that a schedule exists; a current host receipt is required.
 
 ## User control, export, and deletion
 
-The user can inspect the workspace, correct or dismiss proposals, change
-visibility, pause prompts, export the complete allowlisted workspace, import into
+The user can inspect the workspace, correct or dismiss proposals, confirm a
+resume-optional Career Story, change visibility, pause prompts, export the
+complete allowlisted workspace, import into
 a pristine destination, and delete the local workspace through the guarded flow.
 Exports preserve Career Inbox records, approved evidence and redactions,
 accomplishments, private-growth records, frameworks, review cycles, check-ins,
