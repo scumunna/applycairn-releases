@@ -22,9 +22,9 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          test -s release-assets/ApplyCairn-Codex-0.4.0.zip
-          test -s release-assets/ApplyCairn-Claude-Code-0.4.0.zip
-          test -s release-assets/ApplyCairn-0.4.0.mcpb
+          test -s release-assets/ApplyCairn-Codex-0.4.1.zip
+          test -s release-assets/ApplyCairn-Claude-Code-0.4.1.zip
+          test -s release-assets/ApplyCairn-0.4.1.mcpb
           test -s plugins/applycairn/mcp/server.cjs
           test -s plugins/claude-code/mcp/server.cjs
 
@@ -42,6 +42,6 @@ jobs:
         uses: actions/attest-build-provenance@v2
         with:
           subject-path: |
-            release-assets/ApplyCairn-Codex-0.4.0.zip
-            release-assets/ApplyCairn-Claude-Code-0.4.0.zip
-            release-assets/ApplyCairn-0.4.0.mcpb
+            release-assets/ApplyCairn-Codex-0.4.1.zip
+            release-assets/ApplyCairn-Claude-Code-0.4.1.zip
+            release-assets/ApplyCairn-0.4.1.mcpb

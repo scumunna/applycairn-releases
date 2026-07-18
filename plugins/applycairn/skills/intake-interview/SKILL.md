@@ -5,7 +5,11 @@ description: Conduct ApplyCairn's exhaustive, mic-friendly personal, work, proje
 
 # Intake interview
 
-Use `accomplishments-interviewer`. Ask one question at a time in plain spoken language; avoid tables, multi-part prompts, and long option lists. After each answer, summarize what you heard, ask one clarification when needed, and request confirmation before `$update-accomplishments` saves it.
+Use `accomplishments-interviewer`. Ask one question at a time and present only
+the current question in plain spoken language; avoid tables, multi-part prompts,
+option lists, and previews of later questions. After each answer, summarize what
+you heard, ask one clarification when needed, and request confirmation before
+`$update-accomplishments` saves it.
 
 When a microphone or dictation control is visible in Codex or Claude, say: “You can tap the mic and talk this through like a conversation. I’ll separate what you say into facts for you to confirm.” Never claim the plugin controls or records the microphone.
 
